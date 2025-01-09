@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets fact site</title>
+</head>
+<body>
+    
+  <header>
+    <h1>The PLANETS</h1>
+    <nav>
+      <ul id="planet-list">
+        <!-- JavaScript will populate this list -->
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="planet_info">
+      <div class="planet_image">
+        <img id="planet_image" src="" alt="planet image">
+      </div>
+      <div class="planet_details">
+        <h2 id="planet-name">Mercury</h2>
+            <!-- Overview Content Start -->
+        <p id="planet-overview">Mercury is the smallest planet in the Solar System and the closest 
+          to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+          shortest of all the Sun's planets. Mercury is one of four terrestrial 
+          planets in the Solar System, and is a rocky body like Earth.</p>
+          <p>Source: <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" id="planet-source" target="_blank">Wikipedia </a></p>
+
+          <div class="tabs">
+            <button data-tab="overview">OVERVIEW</button>
+                  <!-- Overview Content End -->
+
+                  <!-- Internal Structure Content Start -->
+            <button data-tab="structure">INTERNAL STRUCTURE</button>
+                  <!-- Internal Structure Content End -->
+
+                  <!-- Surface Geology Content Start -->
+            <button data-tab="geology">SURFACE GEOLOGY</button>
+                   <!-- Surface Geology Content End -->
+
+          </div>
+      </div>
+    </section>
+    <section class="planet-stats">
+      <div class="stat">
+        <h3>ROTATION TIME</h3>
+        <p id="rotation-time">58.6 DAYS</p>
+      </div>
+      <div class="stat">
+        <h3>REVOLUTION TIME</h3>
+        <p id="revolution-time">87.97 DAYS</p>
+      </div>
+      <div class="stat">
+        <h3>RADIUS</h3>
+        <p id="radius">2,439.7 KM</p>
+      </div>
+      <div class="stat">
+        <h3>AVERAGE TEMP</h3>
+        <p id="average-time">430°c</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
