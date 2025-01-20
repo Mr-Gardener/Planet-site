@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planets fact site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -11,34 +12,42 @@
     <h1>The PLANETS</h1>
     <nav>
       <ul id="planet-list">
-        <!-- JavaScript will populate this list -->
+        <li>MERCURY</li>
+        <li>VENUS</li>
+        <li>EARTH</li>
+        <li>MARS</li>
+        <li>JUPITER</li>
+        <li>SATURN</li>
+        <li>URANUS</li>
+        <li>NEPTUNE</li>
       </ul>
     </nav>
   </header>
+  <div id="strt-line"></div>
   <main>
     <section class="planet_info">
       <div class="planet_image">
-        <img id="planet_image" src="" alt="planet image">
+        <img id="planet_img" src="./Assets/planet-mercury.svg" alt="planet image">
       </div>
       <div class="planet_details">
-        <h2 id="planet-name">Mercury</h2>
+        <h2 id="planet-name">MERCURY</h2>
             <!-- Overview Content Start -->
         <p id="planet-overview">Mercury is the smallest planet in the Solar System and the closest 
           to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
           shortest of all the Sun's planets. Mercury is one of four terrestrial 
           planets in the Solar System, and is a rocky body like Earth.</p>
-          <p>Source: <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" id="planet-source" target="_blank">Wikipedia </a></p>
+          <p id="src">Source: <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" id="planet-source" target="_blank">Wikipedia </a></p>
 
           <div class="tabs">
-            <button data-tab="overview">OVERVIEW</button>
+            <button data-tab="overview"><span>01</span>OVERVIEW</button>
                   <!-- Overview Content End -->
 
                   <!-- Internal Structure Content Start -->
-            <button data-tab="structure">INTERNAL STRUCTURE</button>
+            <button data-tab="structure"><span>02</span>INTERNAL STRUCTURE</button>
                   <!-- Internal Structure Content End -->
 
                   <!-- Surface Geology Content Start -->
-            <button data-tab="geology">SURFACE GEOLOGY</button>
+            <button data-tab="geology"><span>03</span>SURFACE GEOLOGY</button>
                    <!-- Surface Geology Content End -->
 
           </div>
@@ -64,6 +73,6 @@
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
